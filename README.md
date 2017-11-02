@@ -1,7 +1,7 @@
 # Stress Detection in Voice Signals
 
 This project consists on detecting stress in voice signals based on heart rate values. 
-The project is divided in three main diferent parts: data processing, feature extraction and classification. 
+The project is divided in three main different parts: data processing, feature extraction and classification. 
 We are going to use VOCE database so the code will be focused on its structure. However, individual functions can be used separately.
 We strongly recommend to read the paper about this project before trying to run it.
 
