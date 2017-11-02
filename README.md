@@ -26,14 +26,14 @@ You will need some requisites to run this project.
 
 From raw files in VOCE database you will need to follow some steps in order to have usefull data. You will find the scripts in "Procesado BBDD" folder.
 * Use script_rename.bat file to rename negative IDs so all of them are positive numbers
-* Use analisis_archivos.m to analysis how much data is available (wav files, sensor files...) for each ID
+* Use analisis_archivos.m to analyze how much data is available (wav files, sensor files...) for each ID
 * Extract Heart Rate values from sensors xml files with analisis.xml function. Check both Zts and Zecg values are similar with ejemplos_Zecg_Zts.m script.
-* Select the files you will use based on mean and standar deviation from ejemplos_pre_baseline.m script.
+* Select the files you will use based on mean and standard deviation from ejemplos_pre_baseline.m script.
 * Extract the heart rate values you will use to generate labels with crear_Zecg.m script.
 
 ### 2. Feature Extraction with MATLAB
 In this stage we will need Heart Rate values from sensors files and their corresponding speech wav files. 
-We will extract some basic features and their statistics with some tools like MIRtoolbox and VOICEBOX for MATLAB. 
+We will extract some basic features and their statistics with tools like MIRtoolbox and VOICEBOX for MATLAB. 
 We will also create the corresponding labels (1 = stress, 0 = no stress) for each segment from the audio file based on the Heart Rate values.
 
 * You just need to run main.m script in Matlab and you will get feature matrix and labels for each ID.
